@@ -43,4 +43,26 @@ app.post('/users', async (req, res) => {
     };
 });
 
+app.put('/users/:id', async (req, res) => {
+    try {
+        const { name, city, state } = req.body;
+
+        const { id: userId } = req.params;
+
+        const currentUser = await fs.read();
+
+        const updateUser = { name: name, city, state };
+
+        const foundUser = currentUser.find((u) => u.id === Number(userId));
+
+        Object.assign(foundUser, updateUser);
+
+        await fs.write(currentUser);
+
+        return res.status(401).json(foundUser);
+    } catch (error) {
+        console.log(error.message);
+    }
+});
+
 app.listen(PORT, () => console.log(`Rodando na porta ${PORT}!`))
