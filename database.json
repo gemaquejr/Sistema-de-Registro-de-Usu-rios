@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "name": "Gemaque",
+        "city": "Belém",
+        "state": "Pará"
+    }, {
+        "id": 2,
+        "name": "Edna",
+        "city": "Belém",
+        "state": "Pará"
+    }, {
+
+        "id": 3,
+        "name": "Letícia",
+        "city": "São Paulo",
+        "state": "São Paulo"
+    }
+]
