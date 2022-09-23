@@ -1,0 +1,26 @@
+{
+  "name": "sistema-de-registro-de-usu-rios",
+  "version": "1.0.0",
+  "description": "Registro em banco de dados MySQL com Node.js utilizando o Sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gemaquejr/Sistema-de-Registro-de-Usu-rios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gemaquejr/Sistema-de-Registro-de-Usu-rios/issues"
+  },
+  "homepage": "https://github.com/gemaquejr/Sistema-de-Registro-de-Usu-rios#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
