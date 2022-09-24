@@ -10,14 +10,14 @@ const app = express();
 
 app.use(express.json());
 
-app.get('/users', async(req, res => {
+app.get('/users', async (req, res) => {
     try {
         const users = await fs.read();
         return res.status(200).json(users);
     } catch (error) {
         console.log(error.message);
     }
-}));
+});
 
 app.post('/users', async (req, res) => {
     try {
@@ -64,5 +64,21 @@ app.put('/users/:id', async (req, res) => {
         console.log(error.message);
     }
 });
+
+app.delete('/users/:id', async (req, res) => {
+    try{
+        const { id } = req.params;
+
+        const currentUser = await fs.read();
+
+        const updateUser = currentUser.filter((u) => updateUser.id !== Number(id));
+
+        await fs.write(updateUser);
+
+        return res.status(204).end();
+    } catch (error) {
+        console.log(error.message);
+    }
+})
 
 app.listen(PORT, () => console.log(`Rodando na porta ${PORT}!`))
