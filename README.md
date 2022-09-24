@@ -8,4 +8,7 @@ Registro em banco de dados com Node.js.
 
 ## ✋🏻 Pré-requisitos
 
+- [git](https://git-scm.com/downloads): Ferramenta para gerenciar o código-fonte
+
+- [Visual Studio Code](https://code.visualstudio.com/): Editor de Código Fonte
 - [Node.js](https://nodejs.org/en/)
