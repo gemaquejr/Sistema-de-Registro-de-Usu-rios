@@ -12,7 +12,3 @@ Registro em banco de dados com Node.js.
 
 - [Visual Studio Code](https://code.visualstudio.com/): Editor de Código Fonte
 - [Node.js](https://nodejs.org/en/)
-
-## 📝 Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
